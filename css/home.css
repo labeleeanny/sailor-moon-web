@@ -32,7 +32,7 @@
   color: #12295d;
 }
 
-.page-link:hover {
+.page-link:hover, .page-link:visited:hover, .page-link:link:hover {
   color: #23527c;
 }
 

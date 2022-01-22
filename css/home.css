@@ -1,0 +1,177 @@
+.header {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #a8e6ff;
+  height: 60px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.header-button {
+  margin-right: 12px;
+  font-family: Fantasy, serif;
+}
+
+.header-title {
+  font-size: 22px;
+  margin-left: 22px;
+}
+
+.header__buttons-container {
+  margin-right: 22px;
+}
+
+.page-link {
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #12295d;
+}
+
+.page-link:hover {
+  color: #23527c;
+}
+
+.page-link:active {
+  color: #12295d;
+}
+
+.page-link:visited {
+  color: #12295d;
+}
+
+.page-link:last-child {
+  margin-right: 0;
+}
+
+.home-description-container {
+  position: relative;
+  z-index: 2;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url('../assets/img/welcome-background-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-description-container__wrapper {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.home-description-container__title {
+  font-size: 64px;
+  align-self: flex-start;
+}
+
+.home-description-container__description {
+  font-size: 34px;
+  width: 60%;
+}
+
+@media (max-width: 850px) {
+  .home-description-container__description {
+    font-size: 16px;
+  }
+}
+
+.characters__container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgba(255, 224, 232, 0.4);
+  padding: 70px;
+}
+
+.characters__item-container {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.characters__image {
+  border-radius: 10px;
+}
+
+.characters__link {
+  margin-top: 20px;
+}
+
+.funny-facts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(195, 244, 160, 0.3);
+  padding: 70px;
+}
+
+.funny-facts__title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #430286;
+}
+
+.funny-facts__paragraphs-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.funny-facts__paragraph {
+  padding-bottom: 15px;
+  color: #5f09ba;
+  border-bottom: 3px double black;
+  margin-top: 30px;
+}
+
+.bullet-icon {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+}
+
+.funny-facts__paragraph-item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-footer {
+  height: 50px;
+  padding: 30px;
+  background-color: #d0c3e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-footer__right-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.main-footer__link {
+  margin-right: 20px;
+}
+
+.main-footer__link:last-child {
+  margin-right: 0;
+}
+
+.footer-title {
+  font-size: 20px;
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quizzes</title>
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/quizzes.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sansita+One" />
+
+  <link rel="apple-touch-icon" href="../favicon.jpg">
+  <link rel="icon" href="../favicon.jpg">
+
+  <meta name="theme-color" content="#fafafa">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="quiz-container">
+
+  <header class="header">
+    <a class="page-link" href="../index.html">
+      <span class="header-title">Sailor Moon Lovers</span>
+    </a>
+    <div class="header__buttons-container">
+      <a href="#" class="page-link">Quiz</a>
+      <a target="_blank" href="http://sailormoonnews.com/" class="page-link">Sailor News</a>
+    </div>
+  </header>
+
+  <div class="forms__container">
+    <form onsubmit="return false" class="form-container">
+      <img
+        class="form__picture"
+        width="250"
+        height="350"
+        src="../assets/img/form-image-2.jpg"
+        alt="sailor-starlight"
+      />
+      <span>What does the name Usagi mean?</span>
+      <div class="form__inner-container">
+        <div class="form__input-container__wrapper">
+          <input
+            id="form__first-option__second-form"
+            type="radio"
+            class="form__input"
+            value="rabbit"
+            name="form-radio-question__second-form"
+          />
+          <label for="form__first-option__second-form">Rabbit</label>
+        </div>
+        <div class="form__input-container__wrapper">
+          <input
+            id="form__second-option__second-form"
+            type="radio"
+            class="form__input"
+            value="butterfly"
+            name="form-radio-question__second-form"
+          />
+          <label for="form__second-option__second-form">Butterfly</label>
+        </div>
+        <div class="form__input-container__wrapper">
+          <input
+            id="form__third-option__second-form"
+            type="radio"
+            class="form__input"
+            value="bunny"
+            name="form-radio-question__second-form"
+          />
+          <label for="form__third-option__second-form">Bunny</label>
+        </div>
+        <div class="form__input-container__wrapper">
+          <input
+            id="form__fourth-option__second-form"
+            type="radio"
+            class="form__input"
+            value="flower"
+            name="form-radio-question__second-form"
+          />
+          <label for="form__fourth-option__second-form">Flower</label>
+        </div>
+      </div>
+      <div class="form__submit-button-container">
+        <button class="form__submit-button" onclick="displayRadioValue()">
+          Check answer
+        </button>
+        <span class="form__result" id="form-result"></span>
+      </div>
+
+      <hr width="40%" />
+
+    </form>
+
+    <form onsubmit="return false" class="form-container">
+      <img
+        class="form__picture"
+        height="350"
+        src="../assets/img/form-image-3.jpg"
+        alt="sailor-starlight"
+      />
+      <span>Who is Sailor Moon's past life mother?</span>
+      <div class="form__inner-container">
+        <div class="form__input-container__wrapper">
+          <input
+            class="form__life-mother-input"
+            placeholder="Write your answer"
+            type="text"
+          />
+        </div>
+      </div>
+      <div class="form__submit-button-container">
+        <button class="form__submit-button" type="submit" onclick="displayInputValue()">
+          Check answer
+        </button>
+        <span id="form__text-input-form-result" class="form__result"></span>
+      </div>
+    </form>
+
+    <hr width="40%" />
+
+    <form onsubmit="return false" class="form-container">
+      <img
+        class="form__picture"
+        width="250"
+        src="../assets/img/form-image-4.jpg"
+        alt="sailor-starlight"
+      />
+      <span>When is Sailor Moon's birthday?</span>
+      <div class="form__inner-container">
+        <select class="form__select" name="form__select" id="form-select">
+          <option hidden value="none">- None -</option>
+          <option value="may-15">May 15</option>
+          <option value="september-3">September 3</option>
+          <option value="december-26">December 26</option>
+          <option value="june-30">June 30</option>
+        </select>
+      </div>
+      <div class="form__submit-button-container">
+        <button class="form__submit-button" type="submit" onclick="displaySelectValue()">
+          Check answer
+        </button>
+        <span id="form__select-result" class="form__result"></span>
+      </div>
+    </form>
+
+    <hr width="40%" />
+
+    <form onsubmit="return false" class="form-container">
+      <img
+        class="form__picture"
+        width="250"
+        height="350"
+        src="../assets/img/form-image-1.jpg" alt="sailor-starlight"
+      >
+      <span>
+        The Sailor Starlights consist of:
+      </span>
+      <div class="form__inner-container">
+        <div class="form__input-container__wrapper">
+          <input
+            class="form__input checkbox-value"
+            type="checkbox"
+            id="form__checkbox-star-value"
+            value="sailor-star-maker"
+          />
+          <label for="form__checkbox-star-value">
+            Sailor Star Maker
+          </label>
+        </div>
+        <div class="form__input-container__wrapper">
+          <input
+            class="form__input checkbox-value"
+            type="checkbox"
+            id="form__checkbox-cosmos-value"
+            value="sailor-cosmos"
+          />
+          <label for="form__checkbox-cosmos-value">
+            Sailor Cosmos
+          </label>
+        </div>
+        <div class="form__input-container__wrapper">
+          <input
+            class="form__input checkbox-value"
+            type="checkbox"
+            id="form__checkbox-healer-value"
+            value="sailor-star-healer"
+          />
+          <label for="form__checkbox-healer-value">
+            Sailor Star Healer
+          </label>
+        </div>
+        <div class="form__input-container__wrapper">
+          <input
+            class="form__input checkbox-value"
+            type="checkbox"
+            id="form__checkbox-kakyuu-value"
+            value="princess-kakyuu"
+          />
+          <label for="form__checkbox-kakyuu-value">
+            Princess Kakyuu
+          </label>
+        </div>
+        <div class="form__input-container__wrapper">
+          <input
+            class="form__input checkbox-value"
+            type="checkbox"
+            id="form__checkbox-fighter-value"
+            value="sailor-star-fighter"
+          />
+          <label for="form__checkbox-fighter-value">
+            Sailor Star Fighter
+          </label>
+        </div>
+      </div>
+      <div class="form__submit-button-container">
+        <button class="form__submit-button" type="submit" onclick="displayCheckboxesValues()">
+          Check answer
+        </button>
+        <span id="form__checkboxes-result" class="form__result"></span>
+      </div>
+    </form>
+
+    <hr width="40%" />
+  </div>
+
+  <footer class="main-footer">
+    <span class="footer-title">Sailor Moon Lovers @2022</span>
+    <div class="main-footer__right-container">
+      <a
+        href="https://en.wikipedia.org/wiki/Sailor_Moon/"
+        target="_blank"
+        class="main-footer__link page-link"
+      >
+        Wikipedia
+      </a>
+      <a
+        href="https://www.netflix.com/by/title/81214399/"
+        target="_blank"
+        class="main-footer__link page-link"
+      >
+        Netflix
+      </a>
+      <a
+        href="https://sailormoon-store.com/"
+        target="_blank"
+        class="main-footer__link page-link"
+      >
+        Store
+      </a>
+      <a
+        href="https://www.rostercon.com/en/tv-show/sailor-moon-en/events/35497"
+        target="_blank"
+        class="main-footer__link page-link"
+      >
+        Events
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    function displayRadioValue() {
+      var el = document.getElementsByTagName('input');
+
+      for (var i = 0; i < el.length; i++) {
+        if (el[i].type === "radio") {
+          if (el[i].checked) {
+            var element = document.getElementById('form-result');
+            if (el[i].value === 'bunny') {
+              element.style.color = 'green';
+              return element.innerText = "You are right! Correct answer"
+            }
+
+            element.style.color = 'red';
+            return document.getElementById("form-result").innerText
+              = "Wrong answer :( try again "
+          }
+        }
+      }
+    }
+  </script>
+
+  <script>
+    function displayInputValue() {
+      var element = document.querySelector('.form__life-mother-input');
+      var correctAnswer = element.value === "Queen Serenity"
+        || element.value.toLowerCase() === 'queen serenity'
+        || element.value === 'Queen serenity';
+      var resultElement = document.getElementById('form__text-input-form-result');
+
+      if (correctAnswer) {
+        resultElement.style.color = 'green';
+        return resultElement.innerText = 'You are right! Wow';
+      }
+
+      resultElement.style.color = 'red';
+      return resultElement.innerText = 'Try again please';
+    }
+  </script>
+
+  <script>
+    function displaySelectValue() {
+      var element = document.getElementById('form-select');
+      var correctAnswer = element.value === 'june-30';
+      var resultElement = document.getElementById('form__select-result');
+
+      if (element.value === 'none') return;
+
+      if (correctAnswer) {
+        resultElement.style.color = 'green';
+        return resultElement.innerText = 'Correct answer :)';
+      }
+
+      resultElement.style.color = 'red';
+      return resultElement.innerText = 'Not this time :( Try again'
+    }
+  </script>
+  <script>
+    function displayCheckboxesValues() {
+      var element = document.querySelectorAll('.checkbox-value');
+      const resultElement = document.getElementById('form__checkboxes-result');
+      var correctAnswers = [];
+      resultElement.innerText = '';
+
+      for (var i = 0; i < element.length; i++) {
+        if (element[i].checked) {
+          correctAnswers.push(element[i].value);
+        }
+      }
+
+      if (correctAnswers.length === 4) {
+        if (correctAnswers.includes('sailor-cosmos')) {
+          resultElement.style.color = 'red';
+          return resultElement.innerText = 'Wrong :(';
+        }
+
+        resultElement.style.color = 'green';
+        return resultElement.innerText =  'Wow good!';
+      }
+
+      resultElement.style.color = 'red';
+      return resultElement.innerText = 'Wrong :(';
+    }
+  </script>
+</body>
+</html>

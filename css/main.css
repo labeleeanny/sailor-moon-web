@@ -16,7 +16,12 @@ html {
   font-size: 1em;
   line-height: 1.4;
   font-family: "Sansita One", serif;
+  height: 100%;
 
+}
+
+body {
+  height: 100%;
 }
 
 /*

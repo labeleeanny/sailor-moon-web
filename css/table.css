@@ -56,6 +56,18 @@
   justify-content: space-between;
 }
 
+@media (max-width: 850px) {
+  .table__form-wrapper {
+    flex-wrap: wrap;
+  }
+  .table__form-row {
+    margin-bottom: 12px;
+  }
+  .table__table-header {
+    font-size: 16px;
+  }
+}
+
 .table__form-submit-button {
   margin-top: 16px;
 }

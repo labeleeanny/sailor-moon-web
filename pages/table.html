@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
 
   <head>
-    <title>Table</title>
+    <title>New team</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="theme-color" content="#fafafa">
@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/table.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sansita+One"/>
+
+    <link rel="apple-touch-icon" href="../favicon.jpg">
+    <link rel="icon" href="../favicon.jpg">
   </head>
 
   <body>
     <header class="header">
-      <a class="page-link" href="../index.html">
+      <a class="page-link" href="index.html">
         <span class="header-title">Sailor Moon Lovers</span>
       </a>      
       <div class="header__buttons-container">
@@ -35,15 +38,15 @@
         </tr>
       </table>
 
-      <form class="table__form" onsubmit="return false">
+      <form class="table__form" onsubmit="return false" id="add-new-char">
         <div class="table__form-wrapper">
           <div class="table__form-row">
             <label class="table__form-label" for="character-name">Enter a character's name</label>
-            <input id="character-name" type="text" placeholder="Write here..." />
+            <input id="character-name" type="text" placeholder="Write here..." value="" />
           </div>
           <div class="table__form-row">
             <label class="table__form-label" for="character-age">Enter a character's age</label>
-            <input id="character-age" type="text" placeholder="Write here..." />
+            <input id="character-age" type="text" placeholder="Write here..." value="" />
           </div>
         </div>
         <button 
@@ -112,6 +115,7 @@
 
         newNameCell.appendChild(createName);
         newAgeCell.appendChild(createAge);
+        document.getElementById('add-new-char').reset();
       }
     </script>
   </body>
